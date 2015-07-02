@@ -1,0 +1,20 @@
+<h2>List</h2>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Label</th>
+        <th>Checked</th>
+    </thead>
+    <tbody ng-repeat=" item in items.list">
+        <tr>
+            <td>{{item.id}}</td>
+            <td><a ng-href="#/view/{{item.id}}">{{item.label}}</a></td>
+            <td><input type="checkbox" ng-model="item.selected"></td>
+        </tr>
+    </tbody>
+</table>
+<form ng-submit="items.additem()">
+<input type="text" ng-model="items.newItemLabel"  size="30"
+       placeholder="add new todo here">
+<input class="btn-primary" type="submit" value="add">
+</form>
