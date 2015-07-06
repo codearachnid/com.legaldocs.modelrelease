@@ -1,3 +1,4 @@
+<app-toolbar></app-toolbar>
 <h2>List</h2>
 <table>
     <thead>
@@ -18,3 +19,10 @@
        placeholder="add new todo here">
 <input class="btn-primary" type="submit" value="add">
 </form>
+<div class="demo-swipe" md-swipe-left="onSwipeLeft()">
+    <span class="no-select"> Swipe me to the left</span>
+  </div>
+  <md-divider></md-divider>
+  <div class="demo-swipe" md-swipe-right="onSwipeRight()">
+    <span class="no-select"> Swipe me to the right</span>
+  </div>
