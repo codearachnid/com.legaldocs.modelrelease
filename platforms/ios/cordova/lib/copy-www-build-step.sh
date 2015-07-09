@@ -23,9 +23,6 @@
 #   This script should not be called directly.
 #   It is called as a build step from Xcode.
 
-#cd /mamp/com.legaldocs.modelrelease
-cordova prepare
-
 SRC_DIR="www/"
 DST_DIR="$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME/www"
 COPY_HIDDEN=
@@ -87,3 +84,4 @@ cp -f "${PROJECT_FILE_PATH%.xcodeproj}/config.xml" "$BUILT_PRODUCTS_DIR/$FULL_PR
 
 )
 IFS=$ORIG_IFS
+

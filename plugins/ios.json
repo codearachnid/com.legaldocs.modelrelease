@@ -5,27 +5,37 @@
     },
     "config_munge": {
         "files": {
-            "framework": {
+            "config.xml": {
                 "parents": {
-                    "EventKit.framework": [
+                    "/*": [
                         {
-                            "xml": false,
+                            "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
                             "count": 1
-                        }
-                    ],
-                    "EventKitUI.framework": [
+                        },
                         {
-                            "xml": false,
+                            "xml": "<feature name=\"AppVersion\"><param name=\"ios-package\" value=\"AppVersion\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ActionSheet\"><param name=\"ios-package\" value=\"ActionSheet\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"ios-package\" value=\"YoikScreenOrientation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         }
                     ]
                 }
             },
-            "config.xml": {
+            "framework": {
                 "parents": {
-                    "/*": [
+                    "CoreGraphics.framework": [
                         {
-                            "xml": "<feature name=\"Calendar\"><param name=\"ios-package\" value=\"Calendar\" /></feature>",
+                            "xml": false,
                             "count": 1
                         }
                     ]
@@ -37,7 +47,19 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.legaldocs.modelrelease"
         },
-        "nl.x-services.plugins.calendar": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.legaldocs.modelrelease"
+        },
+        "uk.co.whiteoctober.cordova.appversion": {
+            "PACKAGE_NAME": "com.legaldocs.modelrelease"
+        },
+        "nl.x-services.plugins.actionsheet": {
+            "PACKAGE_NAME": "com.legaldocs.modelrelease"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.legaldocs.modelrelease"
+        },
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.legaldocs.modelrelease"
         }
     },

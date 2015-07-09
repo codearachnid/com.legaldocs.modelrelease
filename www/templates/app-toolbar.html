@@ -1,0 +1,37 @@
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <h2 ng-click="goToHome();">
+      <span>Model Release</span>
+    </h2>
+    <span flex></span>
+    <md-button class="md-icon-button" aria-label="rate the app" ng-click="loveApp();">
+        <ng-md-icon icon="favorite" style="color: greenyellow;"></ng-md-icon>
+    </md-button>
+    <md-menu md-position-mode="target-right target">
+      <md-button class="md-icon-button" aria-label="open menue" ng-click="$mdOpenMenu();">
+          <ng-md-icon md-menu-origin icon="more_vert"></ng-md-icon>
+      </md-button>
+      <md-menu-content width="4">
+          <md-menu-item>
+              <md-button class="md-icon-button" aria-label="release list" ng-click="goToList();">
+                  <ng-md-icon icon="list" md-menu-align-target></ng-md-icon>
+                  Releases
+              </md-button>
+          </md-menu-item>
+          <md-menu-item>
+              <md-button class="md-icon-button" aria-label="add model" ng-click="addModel();">
+                  <ng-md-icon icon="person_add"></ng-md-icon>
+                  Add Model
+              </md-button>
+          </md-menu-item>
+          <md-menu-divider></md-menu-divider>
+          <md-menu-item>
+              <md-button class="md-icon-button" aria-label="settings" ng-click="goToSettings();">
+                  <ng-md-icon icon="settings"></ng-md-icon>
+                  Settings
+              </md-button>
+          </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+  </div>
+</md-toolbar>

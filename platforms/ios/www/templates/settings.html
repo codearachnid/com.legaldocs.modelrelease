@@ -1,0 +1,15 @@
+<app-toolbar></app-toolbar>
+<md-content>
+    <section>
+        <md-subheader class="md-primary">App Stats</md-subheader>
+        <md-list layout-padding>
+            <md-list-item ng-repeat="stat in settings.app_stats">
+                <h3>{{stat.label}}</h3>
+                <h4>{{stat.value}}</h4>
+            </md-list-item>
+        </md-list>
+    </section>
+    <section>
+        <md-subheader class="md-primary">Settings</md-subheader>
+    </section>
+</md-content>
