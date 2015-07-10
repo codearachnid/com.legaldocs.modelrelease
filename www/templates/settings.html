@@ -9,7 +9,14 @@
             </md-list-item>
         </md-list>
     </section>
+    <md-divider ></md-divider>
     <section>
         <md-subheader class="md-primary">Settings</md-subheader>
+        <md-list layout-padding>
+            <md-list-item>
+                Show app tour on startup
+                <md-switch class="md-secondary" ng-model="setting.goToAppTour" aria-label="reset tour" ng-change="resetTour(setting.goToAppTour)"></md-switch>
+            </md-list-item>
+        </md-list>
     </section>
 </md-content>

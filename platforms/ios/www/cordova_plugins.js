@@ -41,6 +41,20 @@ module.exports = [
         "clobbers": [
             "navigator.splashscreen"
         ]
+    },
+    {
+        "file": "plugins/io.litehelpers.cordova.sqlite/www/SQLitePlugin.js",
+        "id": "io.litehelpers.cordova.sqlite.SQLitePlugin",
+        "clobbers": [
+            "SQLitePlugin"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-app-preferences/www/apppreferences.js",
+        "id": "cordova-plugin-app-preferences.apppreferences",
+        "clobbers": [
+            "plugins.appPreferences"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -51,7 +65,9 @@ module.exports.metadata =
     "uk.co.whiteoctober.cordova.appversion": "0.1.7",
     "nl.x-services.plugins.actionsheet": "1.1.7",
     "cordova-plugin-screen-orientation": "1.3.6",
-    "cordova-plugin-splashscreen": "2.1.0"
+    "cordova-plugin-splashscreen": "2.1.0",
+    "io.litehelpers.cordova.sqlite": "0.7.10-pre",
+    "cordova-plugin-app-preferences": "0.6.1"
 }
 // BOTTOM OF METADATA
 });

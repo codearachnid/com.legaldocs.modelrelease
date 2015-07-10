@@ -45,6 +45,9 @@
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		19D142DE2891461FA79315A6 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C9689FF410487CBCAA20AD /* CDVSplashScreen.m */; };
 		52038956BE90415A996E7D48 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33011670054E6BA2D952D1 /* CDVViewController+SplashScreen.m */; };
+		D5861D518E44415697412F3F /* SQLitePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6216B607984907B842E440 /* SQLitePlugin.m */; };
+		C9231B8A05BA4A9F8D37A647 /* sqlite3.c in Resources */ = {isa = PBXBuildFile; fileRef = 22A08A50E5854800B0B760F4 /* sqlite3.c */; };
+		6031BF47D2A645D79BAFCC41 /* AppPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4CFC6A83B248BCA7E1AE7E /* AppPreferences.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,12 @@
 		EB33011670054E6BA2D952D1 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		DFF656334A414702A2DE3FC8 /* CDVSplashScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		54140B54408A4FC699F4832D /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		BC6216B607984907B842E440 /* SQLitePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SQLitePlugin.m"; path = "io.litehelpers.cordova.sqlite/SQLitePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		22A08A50E5854800B0B760F4 /* sqlite3.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "sqlite3.c"; path = "io.litehelpers.cordova.sqlite/sqlite3.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		E6F615CDD8E24924A11D27F2 /* SQLitePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SQLitePlugin.h"; path = "io.litehelpers.cordova.sqlite/SQLitePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C4D0F9FCC1A942BA972C26BC /* sqlite3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "sqlite3.h"; path = "io.litehelpers.cordova.sqlite/sqlite3.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		BF4CFC6A83B248BCA7E1AE7E /* AppPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppPreferences.m"; path = "cordova-plugin-app-preferences/AppPreferences.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		392CD9C5354E48A88DE3645D /* AppPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppPreferences.h"; path = "cordova-plugin-app-preferences/AppPreferences.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +239,12 @@
 				EB33011670054E6BA2D952D1 /* CDVViewController+SplashScreen.m */,
 				DFF656334A414702A2DE3FC8 /* CDVSplashScreen.h */,
 				54140B54408A4FC699F4832D /* CDVViewController+SplashScreen.h */,
+				BC6216B607984907B842E440 /* SQLitePlugin.m */,
+				22A08A50E5854800B0B760F4 /* sqlite3.c */,
+				E6F615CDD8E24924A11D27F2 /* SQLitePlugin.h */,
+				C4D0F9FCC1A942BA972C26BC /* sqlite3.h */,
+				BF4CFC6A83B248BCA7E1AE7E /* AppPreferences.m */,
+				392CD9C5354E48A88DE3645D /* AppPreferences.h */,
 			);
 			name = Plugins;
 			path = "Model Release/Plugins";
@@ -420,6 +435,9 @@
 				D4936352038A47D8B6F85861 /* YoikScreenOrientation.m in Sources */,
 				19D142DE2891461FA79315A6 /* CDVSplashScreen.m in Sources */,
 				52038956BE90415A996E7D48 /* CDVViewController+SplashScreen.m in Sources */,
+				D5861D518E44415697412F3F /* SQLitePlugin.m in Sources */,
+				C9231B8A05BA4A9F8D37A647 /* sqlite3.c in Resources */,
+				6031BF47D2A645D79BAFCC41 /* AppPreferences.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

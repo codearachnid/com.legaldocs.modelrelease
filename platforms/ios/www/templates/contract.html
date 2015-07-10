@@ -1,15 +1,14 @@
 <app-toolbar></app-toolbar>
-<h2>View</h2>
-<table>
-    <thead>
-        <th>ID</th>
-        <th>Label</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>{{contract.id}}</td>
-            <td>{{contract.label}}</td>
-        </tr>
-    </tbody>
-</table>
+<p>{{contract.id}}</p>
+<input ng-model="contract.label">
+<md-contact-chips
+    ng-model="contacts"
+    md-contacts="querySearch($query)"
+    md-contact-name="name"
+    md-contact-image="image"
+    md-contact-email="email"
+    md-require-match
+    filter-selected="filterSelected"
+    placeholder="To">
+</md-contact-chips>
 <a ng-href="#/signature">signature</a>
